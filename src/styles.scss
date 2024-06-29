@@ -1,0 +1,23 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+body{
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+    scrollbar-color: #333 #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #f83a93;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #afafaf;
+}
+h2{
+    background-color: rgb(34, 4, 8);
+    color: #f7f3f3;
+    margin: 0;
+    padding:5px;
+    font-size: 20px;
+    text-align: center;
+}

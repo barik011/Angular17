@@ -1,0 +1,20 @@
+<h2>NG Class Example</h2>
+<!-- Class with String -->
+<p [ngClass]="'bg-primary text-white'">Class with String Example</p>
+
+
+<!-- Class with Array -->
+<p [ngClass]="['bg-success','text-white']">Class with Array Example</p>
+
+
+
+<!-- Class with Object -->
+<p [ngClass]="{'bg-danger':'true','text-white':'true'}">Class with Object Example</p>
+
+<ul>
+@for(emp of employees;track emp.id){
+<li [ngClass]="{'bg-danger':emp.country=='Pakistan','text-white':emp.country=='Pakistan','text-back':true }">{{emp.name}} | {{emp.country}}  | {{emp.address}}</li>
+}
+</ul>
+
+

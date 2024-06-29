@@ -1,0 +1,39 @@
+<h2>If Condition Example</h2>
+
+<!-- if condition is false Below line of code not display that completely removes the element from DOM-->
+@if(false){
+<div>Hello World</div>
+} 
+
+
+<!-- IF Condition: different component based on condition-->
+    <button (click)="login()">Login</button>
+    <button (click)="logout()">LogOut</button>
+    @if(isLogin){
+    <div>Welcome Dashboard</div>
+    }
+    @if(!isLogin){
+        <div>Please Login</div>
+    }
+
+
+    <!-- IF and ELSE Condition: based on radio buttton value it will change -->
+    <input type="radio" name="gender" value="male" checked (click)="onchange(true)" />Male
+    <input type="radio" name="gender" value="female" (click)="onchange(false)"/>Female
+
+    @if(isSelect){
+        <div>I am Male</div>
+    }
+    @else {
+        <div>I am Female</div>
+    }
+
+    <!-- IF and ELSE IF and ELSE Condition: Multiple Condition called Component based on condition -->
+
+    @if(num1<num2){
+        <div>num1 is less than num2</div>
+    }@else if (num1>num2) {
+        <div>num2 is less than num1</div>
+    }@else{
+        <div>num1 and num2 are equal</div>
+    }

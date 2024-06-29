@@ -1,0 +1,21 @@
+<h2>Event Binding Example with Two way Binding</h2>
+<br />
+
+<button (click)="onAlert()">Click alert</button><br/>
+
+<button on-click="onAlert1()">Click alert</button><br/>
+
+<input #textName (keyup)="onChangeName(textName.value)" />
+
+<!-- <input #txtName on-keyup="onChangeName(txtName.value)" /> -->
+
+<input #txtName on-keyup="onChangeName(txtName.value)" on-keydown="onChangeName(txtName.value)" />
+
+<p>Welcom {{name}}</p>
+
+
+<!-- Two way data binding -->
+
+<input type="text" [(ngModel)]="usrname" />
+
+<p>Welcom {{usrname}}</p>

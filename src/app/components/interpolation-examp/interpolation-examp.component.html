@@ -1,0 +1,46 @@
+<h2>Interpolation with ErrorHandling Example| Attribute Binding</h2>
+
+<p>{{name}}</p>
+
+<p>{{"Hello "+name}}</p>
+
+<p>{{num1+name}}</p>
+
+<p>{{name+num1}}</p>
+
+<p>Sum of Two Number: {{num1+num2}}</p>
+
+<!-- Interpolation with Object -->
+<ul>
+    <!-- <li>{{empData.name}}</li>
+    <li>{{empData.address}}</li>
+    <li>{{empData.Mobile}}</li> -->
+
+    <!-- <li>{{empData && empData.name}}</li>
+    <li>{{empData && empData.address}}</li>
+    <li>{{empData && empData.Mobile}}</li> -->
+
+    <!-- <li>{{empData?.name}}</li>
+    <li>{{empData?.address}}</li>
+    <li>{{empData?.Mobile}}</li> -->
+
+    <li>{{empData?empData.name:'Data Not Available'}}</li>
+    <li>{{empData?empData.address:'Data Not Available'}}</li>
+    <li>{{empData?empData.Mobile:'Data Not Available'}}</li>
+</ul>
+
+<!-- Attribute Binding -->
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <td [attr.colspan]="col">Employee Details</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{empData.name}}</td>
+            <td>{{empData.address}}</td>
+            <td>{{empData.Mobile}}</td>
+        </tr>
+    </tbody>
+    </table>

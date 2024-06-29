@@ -1,0 +1,13 @@
+<h2>Style Binding Example </h2>
+<br />
+<div style="background-color: #eeafaf;">Normal Styling</div>
+<br />
+<div [style]="'background-color: #afeed0;'">Binding Styling</div>
+<br />
+<div style="background-color: #afb0ee;" [style.font-size]="'20px'">Normal and Binding Styling with diff properties</div>
+
+<br />
+<div style="background-color: #f0d096;" [style.font-size]="'20px'" [style.font-weight]="isBold">Normal and Binding Styling with diff properties</div>
+
+<br />
+<div style="background-color: #eeafaf;" [style.background-color]="'#afeeb7'">Normal and Binding Styling with same properties</div>

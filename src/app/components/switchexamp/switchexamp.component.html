@@ -1,0 +1,43 @@
+<h2>Switch Loop Example</h2>
+
+@switch (rating) {
+    @case (1) {
+        <div>Excellent</div>
+    }
+    @case (2) {
+        <div>Very Good</div>
+    }
+    @case (3) {
+        <div>Good</div>
+    }
+    @case (3) {
+        <div>Average</div>
+    }
+    @case (4) {
+        <div>Not Rated</div>
+    }
+    @case (5) {
+        <div>Not Rated</div>
+    }
+    @default {
+        <div>Not Rated</div>
+}
+}
+<hr>
+<input type="text" #name (keyup)="0" />
+@switch(name.value) {
+    @case('Barique') {
+        <div>Hi Barique </div>
+    }
+    @case('Tarique') {
+        <div>Hi Tarique </div>
+    }
+    @case('Rasikh') {
+        <div>Hi Rasikh </div>
+    }
+    
+    @default {
+        <div>{{name.value}} no match found</div>
+}
+}
+<!-- default break implemented not required to write in switch case  -->

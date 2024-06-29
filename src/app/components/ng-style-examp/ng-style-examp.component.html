@@ -1,0 +1,68 @@
+<h2>NG Style Example</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Sl no</th>
+            <th>Emp Name</th>
+            <th>Emp Deart</th>
+            <th>Emp Location</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @for(emp of employees; track emp.name; let i=$index){
+            <tr [ngStyle]="{'background-color':getColor(emp.location)}">
+                <td>{{i+1}}</td>
+                <td> {{emp.name}}</td>
+                <td>{{emp.department}}</td>
+                <td>{{emp.location}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<hr>
+<h4>For Loop Example with NG Style</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Sl no</th>
+                <th>Emp Name</th>
+                <th>Emp Deart</th>
+                <th>Emp Location</th>
+    
+            </tr>
+        </thead>
+        <tbody>
+            @for(emp of employees; track emp.id;let i =$index;let total=$count;let ev=$even;let last=$last)
+            {
+                        @if(ev)
+                        {
+                                <tr [ngStyle]="{'background-color':last?'yellow': 'aquamarine'}">
+                                    <td>{{i+1}}</td>
+                                    <td> {{emp.name}}</td>
+                                    <td>{{emp.department}}</td>
+                                    <td>{{emp.location}}</td>
+                                </tr>
+                        }
+                        @else{
+                                <tr [ngStyle]="{'background-color':last?'yellow':  'rgb(202, 219, 214)'}">
+                                    <td>{{i+1}}</td>
+                                    <td> {{emp.name}}</td>
+                                    <td>{{emp.department}}</td>
+                                    <td>{{emp.location}}</td>
+                                </tr>
+                            }
+                        @if(last){
+                            <tr [ngStyle]="{'background-color':last?'#cfcfcf':  'rgb(202, 219, 214)','font-size':'18px','font-weight':'600'}">            
+                                <td colspan="3">Total Number of Employees:</td>
+                                <td>{{total}}</td>
+                            </tr>
+                        }   
+                    }
+        
+        </tbody>
+    </table>
+    </div>
+
