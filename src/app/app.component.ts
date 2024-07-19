@@ -12,6 +12,8 @@ import { NgStyleExampComponent } from './components/ng-style-examp/ng-style-exam
 import { StyleBindingComponent } from './components/style-binding/style-binding.component';
 import { ClassBindingComponent } from './components/class-binding/class-binding.component';
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
+import { PipeExampComponent } from './components/pipe-examp/pipe-examp.component';
+import { ApiSrvdataComponent } from './components/api-srvdata/api-srvdata.component';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +31,9 @@ import { EventBindingComponent } from './components/event-binding/event-binding.
     NgStyleExampComponent,
     StyleBindingComponent,
     ClassBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    PipeExampComponent,
+    ApiSrvdataComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

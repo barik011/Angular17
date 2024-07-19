@@ -1,0 +1,13 @@
+<h2>API Data Binding with Service Obsevable Example </h2>
+
+<p>{{data}}</p>
+
+<ul>
+    @for (post of getPostdata; track post.id) {
+        <li >
+            <h6>{{post.title}}</h6>
+            <p>{{post.body}}</p>
+        </li>
+    }
+    
+</ul>
