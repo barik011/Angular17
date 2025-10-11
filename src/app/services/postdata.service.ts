@@ -9,14 +9,19 @@ import { Postdata } from '../interface/postdata';
 export class PostdataService {
 
   private postUrl='https://jsonplaceholder.typicode.com/posts';
+  private prodUrl='https://fakestoreapi.com/products';
 
   constructor(private http: HttpClient) { }
   getData() {
     return ['data1', 'data2', 'data3'];
   }
 
-  getPostData():Observable<Postdata> {
-    return this.http.get<Postdata>(this.postUrl);
+  getPostData():Observable<Postdata[]> {
+    return this.http.get<Postdata[]>(this.postUrl);
+  }
+
+  getProductData():Observable<any[]>{
+    return this.http.get<any[]>(this.prodUrl)
   }
 
 }

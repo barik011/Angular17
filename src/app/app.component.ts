@@ -14,6 +14,7 @@ import { ClassBindingComponent } from './components/class-binding/class-binding.
 import { EventBindingComponent } from './components/event-binding/event-binding.component';
 import { PipeExampComponent } from './components/pipe-examp/pipe-examp.component';
 import { ApiSrvdataComponent } from './components/api-srvdata/api-srvdata.component';
+import { DefferComponent } from './components/deffer/deffer.component';
 
 @Component({
   selector: 'app-root',
@@ -33,7 +34,8 @@ import { ApiSrvdataComponent } from './components/api-srvdata/api-srvdata.compon
     ClassBindingComponent,
     EventBindingComponent,
     PipeExampComponent,
-    ApiSrvdataComponent
+    ApiSrvdataComponent,
+    DefferComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
