@@ -10,7 +10,6 @@ import { PostdataService } from '../../services/postdata.service';
 })
 export class DefferComponent {
   prodData:any[]=[];
-
     constructor(private productServices:PostdataService){
     }
 
