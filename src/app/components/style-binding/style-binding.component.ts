@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './style-binding.component.scss'
 })
 export class StyleBindingComponent {
+  title:string="Style Binding Example"
   isBold:string='bold'
 
 }

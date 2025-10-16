@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './ng-style-examp.component.scss'
 })
 export class NgStyleExampComponent {
+  title:string ="NG Style Example";
   employees=[
     {
       id:'001',

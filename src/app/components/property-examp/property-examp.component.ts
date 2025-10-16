@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './property-examp.component.scss'
 })
 export class PropertyExampComponent {
+  title:string="Property Binding and Interpolation Example"
 
   name = 'Govind Kumar';
   imgPath1 = './assets/bg-img1.jpg';

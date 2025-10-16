@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './ngclass-examp.component.scss'
 })
 export class NgClassExampComponent {
+  title:string="NG Class Example"
   isEnable:string='India';
   employees=[
     {

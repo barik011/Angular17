@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './class-binding.component.scss'
 })
 export class ClassBindingComponent {
+  title:string="Class Binding Example";
   dynamicClass = 'bgColorClass-2 fontSizeClass-3 fontWeightClass-2';
 
   isValid:boolean = true;
